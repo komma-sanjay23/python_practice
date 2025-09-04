@@ -877,14 +877,365 @@ import calendar
 # for value in info:
 #   print(value)
 
-s1 = {1,3,5,6,4,7,8,9}
-s2 = {5,6,7,9,10,11,12}
-# print(s1.union(s2))
-# print(s1.intersection(s2))
-s2.intersection_update(s1)
-print(s2)
-# print(s1.difference(s2))
-# print(s1.symmetric_difference(s2))
+# s1 = {1,3,5,6,4,7,8,9}
+# s2 = {5,6,7,9,10,11,12}
+# # print(s1.union(s2))
+# # print(s1.intersection(s2))
+# s2.intersection_update(s1)
+# print(s2)
+# # print(s1.difference(s2))
+# # print(s1.symmetric_difference(s2))
+
+
+
+# def count_vowels(s):
+#     return sum(1 for ch in s.lower() if ch in "aeiou")
+# print(count_vowels("hello world"))
+
+
+
+# def amstrong_number(n):
+#     sum = 0
+#     for i in str(n):
+#         sum += int(i) ** len(str(n))
+#     return n == sum 
+# print(amstrong_number(371))
+
+# def amstrong(n):
+#     return n == sum(int(i)**len(str(n)) for i in str(n))
+
+# print(amstrong(371))
+
+
+
+# a = 'sanjaybhargav'
+# for i in set(a):
+#     a.count(i)
+#     print(f"{i}: {a.count(i)}")
+
+# a = 'sanjaybhargav'
+# for i in a:
+#     a.count(i)
+#     print(f"{i}: {a.count(i)}")
+
+# s = "hello world"
+# print({ch: s.count(ch) for ch in set(s)})
+
+# a = 'sanjaybhargavejigeovu'
+# # if a:
+# #     a = a.replace('a', '')
+# #     a = a.replace('e', '')
+# #     a = a.replace('i', '')
+# #     a = a.replace('o', '')
+# #     a = a.replace('u', '')
+# #     print(a)
+
+# ans = [i for i in a if i not in 'aeiou']
+# print(''.join(ans))
+
+# ans = (i for i in a if i not in 'aeiou')
+# print(''.join(ans))
+
+# a = 'sanjay'
+# b = 'jsayan'
+# if sorted(a) == sorted(b):
+#     print("The strings are anagrams.")
+# else:
+#     print("The strings are not anagrams.")
+
+# a = 'sanjay'
+# b = 'jsayan'
+# if sorted(a,reverse = True) == sorted(b,reverse = True):
+#     print("The strings are anagrams.")
+# else:
+#     print("The strings are not anagrams.")
+
+
+# a = 'snajay bhargav komma and i am in austin'
+# a = a.replace(' ','_')
+# print(a)
+
+
+# a = 'snajay bhargav komma and i am in austin'
+# for i in a.split():
+#     print(i,len(i))
+
+
+# a = 'snajay bhargav komma and i am in austin'
+# a = max(a.split(),key = len)
+# print(a,len(a))
+
+
+# a = 'snajay bhargav komma and i am in austin'
+# print(max(a.split(), key=len))
+
+
+# a = 'snajay bhargav komma and i am in austin'
+# print(a.title())
+
+
+
+# def func(a):
+#     for i in a.split():
+#         i = i.capitalize()
+#         print(''.join(i))
+
+# a = 'snajay bhargav komma and i am in austin'
+# func(a)
+# # for i in a.split():
+# #     i = i.capitalize()
+# #     print(''.join(i))
+
+
+
+# print(' '.join(i.capitalize() for i in a.split()))
+
+# a = "this is is a test"
+# a = 'sanjay bhargav komma i and i am in austin'.split()
+# for i in set(a):
+#     print(f"{i}: {a.count(i)}")
+
+# a = 'sanjay bhargav komma i and i am in austin'.split()
+# for i in a:
+#     print(i[::-1])
+
+
+# a = 'sanjay bhargav komma i and i am in austin'.split()
+# print(' '.join(i[::-1] for i in a))
+
+
+# lst = [1,4,6,3,67,33,62,12,67,86,95]
+# print(max(lst),min(lst),sum(lst),len(lst),sorted(lst),sorted(lst,reverse=True))
+
+
+# lst = [1,4,6,3,67,33,62,12,67,86,95]
+# lst.sort()
+# print(lst)  
+
+
+# lst = [1,4,6,3,67,33,62,12,67,86,95]
+# print(sorted(lst))  
+
+
+# lst = [1,4,6,3,67,33,62,12,67,86,95,1,4,67,33]
+# lst = set(lst)
+# print(list(lst))
+
+
+# lst = [1,4,6,3,67,33,62,12,67,86,95]
+# lst1 = [1,4,6,3,67,33,62,12,67,86,95,1,4,67,33]
+# lst = set(lst)
+# lst1 = set(lst1)
+# lst.intersection(lst1)
+# lst = list(lst)
+# print(lst)
+
+
+
+# lst = [1,4,6,3,67,33,62,12,67,86,95]
+# lst1 = [1,4,6,3,67,33,62,12,67,86,95,1,4,67,33]
+# lst = set(lst)
+# lst1 = set(lst1)
+
+# a = lst.union(lst1)
+# a = list(a)
+# print(a)
+
+
+
+# lst = [1,4,6,3,67,33,62,12,67,86,95,1,4,67,33]
+
+# k=5
+# lst1 = [1,2,3,4,5,6,7,8,9,10]
+# # lst1[5:] + lst1[:5]
+# print(lst1[k:] + lst1[:k])
+
+
+# def rotate(k):
+#     return lst1[k:] + lst1[:k]  
+
+
+# k = int(input('Enter the k value:'))
+# lst1 = input('Enter the list values separated by comma:').split(',')
+# # lst1 = [1,2,3,4,5,6,7,8,9,10]
+# print(rotate(k))
+
+
+# lst = [1,4,6,3,67,33,62,12,67,86,95,1,4,67,33]
+# lst = sorted(lst)
+# lst = set(lst)
+# print(lst)
+
+
+# lst = [1,4,6,3,67,33,62,12,67,86,95,1,4,67,33]
+# # print(lst)
+# lst = set(lst)
+# lst = sorted(lst)
+# lst = list(lst)
+# print(lst[-2])
+
+
+# lst = [1,4,6,3,67,33,62,12,67,86,95,1,4,67,33]
+# for i in set(lst):
+#     print(f'{i}:{lst.count(i)}')
+
+
+# list_of_tuples = [("a", 1), ("b", 2)]
+# list_of_tuples = dict(list_of_tuples)
+# print(list_of_tuples)
+
+
+# t = (1, 2, 3,4,5)
+# a, b, c, d, e = t
+# print(a, b, c, d, e)
+
+
+# s1 = {1,2,3,4,5}
+# s2 = {4,5,6,7,8}
+# print(s1 | s2)
+# print(s1 & s2)
+# print(s1 - s2)
+# print(s2 - s1)
+# s3 = s1.union(s2)
+# s4 = s1.intersection(s2)
+# s5 = s1.difference(s2)
+# s6 = s2.difference(s1)
+# print(s3)
+# print(s4)
+# print(s5)
+# print(s6)
+
+
+# s1 = {1,2,3,4,5}
+# s2 = {4,5,6,7,8}
+
+# s7 = s1.issubset(s2)
+# s8 = s2.issubset(s1)
+# print(s7)
+# print(s8)
+
+
+# s1.discard(2)
+# print(s1)
+
+
+
+# lst = [1,4,6,3,67,33,62,12,67,86,95,1,4,67,33]
+# for i in dict.fromkeys(lst):
+#     print(f'{i}:{lst.count(i)}')
+
+# lst = [1,4,6,3,67,33,62,12,67,86,95,1,4,67,33]
+# for i in set(lst):
+#     print(f'{i}:{lst.count(i)}')
+
+
+# sentence = "hello world hello".split()
+# # s = sentence.split()
+# for word in set(sentence):
+#     print(f'{word}: {sentence.count(word)}')
+
+# print({word: sentence.count(word) for word in set(sentence)})
+
+
+
+
+
+# dict1 = {"a": 1}
+# dict2 = {"b": 2}
+
+# dict3 = {**dict1, **dict2}
+# print(dict3)
+
+
+# dict1 = {'a' : 2, 'c': 9, 'd': 4, 'e': 1}
+# sorted_dict1 = dict(sorted(dict1.items(),key = lambda item: item[1]))
+# print(sorted_dict1)
+# -------------------research------------------------------------------------------
+
+
+
+# dict1 = {'a' : 2, 'c': 9, 'd': 4, 'e': 1}
+# # for k,v in dict1.items():
+# #     print(f'{v}: {k}')
+
+
+# print({v:k for k,v in dict1.items()})
+
+
+# dict1 = {'a' : 2, 'c': 9, 'd': 4, 'e': 1}
+# max_key = max(dict1, key=lambda k: dict1[k])
+# print(max_key)
+
+
+# dict1 = {'a' : 2, 'c': 9, 'd': 4, 'e': 1}
+# max_key = max(dict1, key=dict1.get)
+# print(max_key, dict1[max_key])
+
+# dict1 = {'a' : 2, 'c': 9, 'd': 4, 'e': 1}
+# print(max(dict1,key = dict1.get))
+
+
+# dict1 = {'a' : 2, 'c': 9, 'd': 4, 'e': 1}
+# print({k:v for k, v in dict1.items()})
+#     # print(f'{k}: {v}')
+
+# dict1 = {'a' : 2, 'c': 9, 'd': 4, 'e': 1}
+# print(dict1.keys())
+
+# dict1 = {'a' : 2, 'c': 9, 'd': 4, 'e': 1}
+# print(dict1.values())
+
+
+# print(dict1 == dict2)
+
+
+# dict1 = {'a' : 2, 'c': 9, 'd': 4, 'e': 1}
+# dict1.pop('c')
+# print(dict1)
+
+# dict1 = {'a' : 2, 'c': 9, 'd': 4, 'e': 1}
+# dict1.popitem()
+# print(dict1)
+
+# dict1 = {'a' : 2, 'c': 9, 'd': 4, 'e': 1}
+# dict1.pop('a', None)
+# print(dict1)
+
+# dict1 = {'a' : 2, 'c': 9, 'd': 4, 'e': 1}
+# dict1.update({'f': 6})
+# print(dict1)
+
+
+
+# dict1 = {"a",'b','c'}
+# dict2 = 0
+# c = dict.fromkeys(dict1,dict2)
+# print(c)
+
+
+# stack = []
+# stack.append(1)
+# stack.append(2) 
+# stack.append(3)
+# stack.append(4)
+# # stack.pop()
+# # stack.pop()
+# print(stack.pop())
+# print(stack)
+
+
+# ---------------------------------------
+s = 'swiwss'
+for i in s:
+    if s.count(i) == 1:
+        print(i)
+        break
+else:
+    print(None)
+
+
+
+# print([i for i in s if s.count(i) == 1])
 
 
 
@@ -896,15 +1247,96 @@ print(s2)
 
 
 
+# Stack implementation using list.
+
+# Queue implementation using collections.deque.
+
+# Find the first non-repeating character in a string.
+
+# Find all pairs in a list that sum to a target.
+
+# Group anagrams from a list of words.
+
+# Find the most frequent element in a list.
+
+# Implement binary search on a sorted list.
+
+# Find missing number from a sequence.
+
+# Flatten a nested list.
+
+# Find subarray with the maximum sum (Kadane’s Algorithm).
+
+
+
+
+s = "A man, a plan, a canal: Panama"
+s = s.replace(',','').replace(':','').replace(' ','').lower().strip()
+if s == s[::-1]:
+    print("Palindrome")
+else:
+    print("Not a palindrome")
+
+
+# s = 'The quick brown fox jumpss'
+# s = s.split()
+# print({i:s.count(i) for i in set(s) })
+
+
+# s = 'The quick brown fox jumpss fox'
+# s = s.split()
+# print({i:s.count(i) for i in s})
+
+
+
+
+# s = 'The quick brown fox jumpss'
+# s = s.split()
+# for i in set(s):
+#     print(i,len(i))
+
+
+# s = 'The quick brown fox jumpss'
+# a = max(len(i) for i in s.split())
+# print(a)
+
+# def longest_word(s):
+#     max_length = 0
+#     for i in s.split():
+#         max_length = max(max_length, len(i))
+#     return max_length
+
+# print(longest_word("The quick browhhhn fox jumpss"))
+
+
+# s = 'The quick brhhhown fox jumpss'
+# n = s.split()
+# final = ''
+# max_length = max(len(i) for i in n)
+# for i in n:
+#     if len(i) == max_length:
+#         final += i
+# print(final)
+
+
+s = 'The quick brhhhhown fox jumpss'.split()
+high = ''
+for i in range(len(s)):
+    # print(len(s[i]))
+    if len(s[i]) > len(high):
+        high = s[i]
+print(high)
+
+
+print('hello')
 
 
 
 
 
-
-
-
-
+# s = 'The quick brown fox jumpss'
+# for i in s.split():
+#     print(i,len(i))
 
 
 
