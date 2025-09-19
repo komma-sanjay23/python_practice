@@ -407,8 +407,8 @@
 #     print(f.readlines())
 
 
-with open("sample.txt", "r") as f:
-    print(len(f.read().split()))
+# with open("sample.txt", "r") as f:
+#     print(len(f.read().split()))
 
 
 
